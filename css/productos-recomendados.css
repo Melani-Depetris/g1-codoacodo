@@ -98,10 +98,10 @@ button.pulgadas:focus {
 .swiper-container{
     overflow: hidden;
 }
-.swiper-button-next, .swiper-button-prev {
-    margin-left: 10%; /* Ajusta la distancia desde el borde izquierdo */
-    margin-right: 10%; /* Ajusta la distancia desde el borde derecho */
-}
+/* .swiper-button-next, .swiper-button-prev {
+    margin-left: 0; 
+    margin-right: 0; 
+} */
 
 /*Formato flechitas Swipper*/
 
@@ -111,19 +111,22 @@ button.pulgadas:focus {
     color: black; 
     font-size: 18px;
 }
+.botoncitos{
+    position: relative;
+    width: full;
+}
 /* Ajustar posición vertical de las flechas */
 .swiper-button-next,
 .swiper-button-prev {
-    top: 50%; /* Posición vertical al 50% del contenedor */
-    transform: translateY(-150%); /* Ajustar posición verticalmente */
+    position: absolute;
+    transform: translateY(-750%); 
 }
-
 
 /*Para acomodar las posiciones de los elementos dentro de las tarjetas*/
 
 .card .card-body {
     position: relative; /* Establecer posición relativa para que el precio se posicione de forma absoluta en relación a este contenedor */
-    height: 100%; 
+    height: 100%;
 }
 
 .card .card-body .price {
