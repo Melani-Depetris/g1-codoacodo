@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/elegidos-del-mes.css">
-    <link rel="stylesheet" href="css/linea-hogar.css">
 
-    <!-- BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"/>
-      <!-- ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-      
-    <!-- Swiper CSS -->
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-   <!-- Local CSS -->
-   <link rel="stylesheet" href="css/productos-recomendados.css">
-   <!-- Fuente de Samsung -->
-   <link href="https://db.onlinewebfonts.com/c/00487ece712f86b9b503997ceb17daff?family=SamsungOne-700" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/elegidos-del-mes.css">
+  <link rel="stylesheet" href="css/linea-hogar.css">
+  <link rel="stylesheet" href="css/login.css">
 
-  </head>
-  <body>
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- ICONS -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="css/productos-recomendados.css">
+  <!-- Fuente de Samsung -->
+  <link href="https://db.onlinewebfonts.com/c/00487ece712f86b9b503997ceb17daff?family=SamsungOne-700" rel="stylesheet">
+
+</head>
+
+<body>
   <!-- MENU  -->
   <nav class="bg-body-secondary navbar navbar-expand-lg ">
     <div class="container-fluid">
       <a class="justify-content-around navbar-brand text-dark-emphasis" href="#">Nosotros</a>
 
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      <button type="button" class="btn bs-border-color" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <span class="material-symbols-outlined">
           search
         </span>
@@ -99,13 +96,20 @@
 
         </div>
         <!-- login y carrito-->
+
         <div>
-          <span class="material-symbols-outlined">
-            person
-          </span>
-          <span class="material-symbols-outlined">
-            shopping_cart
-          </span>
+          <button type="button" class="btn bs-border-color" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <span class="material-symbols-outlined">
+              person
+            </span>
+          </button>
+
+          <button type="button" class="btn bs-border-color" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <span class="material-symbols-outlined">
+              shopping_cart
+            </span>
+          </button>
+          
         </div>
       </div>
     </div>
@@ -135,621 +139,744 @@
       </div>
     </div>
   </div>
-
-    <!-- SLIDE -->
-    <section>
-      <!-- Slide Bootstrap -->
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <!-- data-bs-ride="carousel  -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
+  <!-- Modal Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">
+            <div class="one-header">
+              <div class="logo">
+                <h1><img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg"
+                    alt="Samsung account"></h1>
+              </div>
+            </div>
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active position-relative">
-            <!-- Imagen para pantallas móviles -->
-            <img
-              src="../../../public/images/slide/slide-1-mobile.webp"
-              class="d-block d-md-none w-100"
-              alt="First slide Mobile"
-            />
-
-            <!-- Imagen para pantallas de escritorio -->
-            <img
-              src="../../../public/images/slide/slide-1.webp"
-              class="d-none d-md-block w-100"
-              alt="First slide Desktop"
-            />
-
-            <div class="position-absolute containerTextSlide">
-              <h1 class="text-black">Galaxy S24 Series</h1>
-              <p class="fw-light parrafoSlide">
-                Próximamente en Argentina | Registrate y obtenelos <br />
-                con beneficios exclusivos
-              </p>
-              <div class="gap-4 d-flex align-items-center mt-4">
-                <a href="#" class="text-dark textLink position-relative decorationLink"
-                  >Más información</a
-                >
-                <div class="p-2 px-4 rounded-pill btnContainer">
-                  <a href="#" class="text-light text-decoration-none textLink"
-                    >Registrate</a
-                  >
-                </div>
-              </div>
+        <div class="modal-body">
+          <div class="content ">
+            <div class="forms-login">
+                <form autocomplete="off">
+                    <fieldset>
+                        <div class="title">
+                            <h1>Una cuenta. <br>
+                              Cualquier dispositivo. <br>
+                              Solo para ti. <br>
+                               Inicia sesión para comenzar.</h1>
+                        </div>
+                        <div class="newId-form form-floating mb-3 ">
+                            <label for="correo"></label>
+                            <div class="inputMail ">
+                                <input type="email" class="form-control " id="floatingInput"
+                                    placeholder="Correo electronico" />
+                            </div>
+                        </div>
+                        <div class="suscripcionCheck ">
+                            <input type="checkbox" id="suscripcion" name="suscripcion" value="aceptar">
+                            <label for="suscripcion">Recordar mi ID</label>
+                        </div>
+                        <div class="buttonContainer">
+                            <button class="btn btn-primary " id="signInButton" type="button">
+                                Siguiente
+                            </button>
+                        </div>
+                        <ul>
+                            <li class="loginLink text-start">
+                                <a href="#">
+                                    Buscar ID
+                                </a>
+                            </li>
+                            <li>
+                                <a href=" #">Crear cuenta</a>
+                            </li>
+                        </ul>
+                        <div class="googleButtonContainer ">
+                            <button class="googleButton btn btn-light" id="googleSignInButton" type="button"><img
+                                    src="/img/el-logo-g-de-google.png" alt=""><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPwDwCQuElE96it56Mw_P91SW1PHPHMGX7GJpBfj2mOA&s" />Iniciar
+                                sesión con Google</button>
+                        </div>
+                        <div class="qrButtonContainer">
+                            <button class="qrButton btn btn-light" id="qrSignInButton" type="button"><img
+                                    src="data:image/png;base64,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"
+                                    alt="">Iniciar sesión con código QR</button>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <!-- Imagen para pantallas móviles -->
-            <img
-              src="../../../public/images/slide/slide-2-mobile.webp"
-              class="d-block d-md-none w-100"
-              alt="Second slide Mobile"
-            />
-
-            <!-- Imagen para pantallas de escritorio -->
-            <img
-              src="../../../public/images/slide/slide-2.jpeg"
-              class="d-none d-md-block w-100"
-              alt="Second slide"
-            />
-
-            <div class="position-absolute containerTextSlide text-light">
-              <h1>Nuevo TV 98" <br />la experiencia del cine en tu casa</h1>
-              <p class="fw-light parrafoSlide">
-                Cuotas sin interés | Plan canje hasta 54% de ahorro.
-              </p>
-              <div class="gap-4 d-flex align-items-center mt-4">
-                <a href="#" class="text-light textLink decorationLink position-relative"
-                  >Más información</a
-                >
-
-                <div class="d-flex p-2 px-4 bg-white rounded-pill">
-                  <a href="#" class="text-decoration-none textLink text-dark">
-                    Comprar
+        </div>
+    
+    
+        </div>
+    
+        <footer class="one-footer" role="contentinfo">
+          <div class="footer-inner">
+              <div class="footer-logo"><img
+                      src="https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg"
+                      onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg';"
+                      alt="Samsung account"></div>
+              <address class="footer-address">Copyright © 1995-2024 Samsung. All Rights Reserved.</address>
+              <div class="footer-links" role="link">
+                  <a href="https://account.samsung.com/membership/terms/termscontents?paramLocale=es_AR">
+                      Términos y condiciones
                   </a>
-                  <span class="material-symbols-outlined text-dark">
-                    north_east
-                  </span>
-                </div>
+                  <a href="https://account.samsung.com/membership/terms/privacypolicy?paramLocale=es_AR" class="active">
+                      Aviso de privacidad de Samsung account
+                  </a>
+                  <a href="https://account.samsung.com/membership/notice/notice-list?paramLocale=es_AR">
+                      Aviso
+                  </a>
+  
+  
+                  <a href="https://help.content.samsung.com/csweb/faq/searchFaq.do">
+                      Servicio de atención al cliente
+                  </a>
+  
               </div>
-            </div>
           </div>
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <!-- Imagen para pantallas móviles -->
-            <img
-              src="../../../public/images/slide/slide-3-mobile.webp"
-              class="d-block d-md-none w-100"
-              alt="Third slide Mobile"
-            />
+      </footer>
+      </div>
+    </div>
+  </div>
+  <!-- SLIDE -->
+  <section>
+    <!-- Slide Bootstrap -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <!-- data-bs-ride="carousel  -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
 
-            <!-- Imagen para pantallas de escritorio -->
-            <img
-              src="../../../public/images/slide/slide-3.webp"
-              class="d-none d-md-block w-100"
-              alt="Third slide"
-            />
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active position-relative">
+          <!-- Imagen para pantallas móviles -->
+          <img src="public/images/slide/slide-1-mobile.webp" class="d-block d-md-none w-100"
+            alt="First slide Mobile" />
 
-            <div class="position-absolute containerTextSlide text-light">
-              <h1>Nuevos Lavarropas <br />Carga Superior Digital Inverter</h1>
+          <!-- Imagen para pantallas de escritorio -->
+          <img src="public/images/slide/slide-1.webp" class="d-none d-md-block w-100"
+            alt="First slide Desktop" />
 
-              <div class="gap-4 d-flex align-items-center mt-4">
-                <a href="#" class="text-light textLink decorationLink position-relative"
-                  >Más información</a
-                >
-                <div class="d-flex p-2 px-4 bg-white rounded-pill">
-                  <a href="#" class="text-decoration-none textLink text-dark">
-                    Comprar
-                  </a>
-                  <span class="material-symbols-outlined text-dark">
-                    north_east
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Slide 4 -->
-          <div class="carousel-item">
-            <!-- Imagen para pantallas móviles -->
-            <img
-              src="../../../public/images/slide/slide-4-mobile.webp"
-              class="d-block d-md-none w-100"
-              alt="Fourth slide Mobile"
-            />
-
-            <!-- Imagen para pantallas de escritorio -->
-            <img
-              src="../../../public/images/slide/slide-4.webp"
-              class="d-none d-md-block w-100"
-              alt="Fourth slide"
-            />
-
-            <div class="position-absolute containerTextSlide">
-              <h1 class="text-black">
-                El próximo gran <br />
-                avance está aquí
-              </h1>
-              <p class="fw-light parrafoSlide">
-                Ahora tambien disponible en Galaxy S23 Series, Z Flip5 | ZFold5,
-                Tab S9 | S9+ | S9 Ultra
-              </p>
-              <div class="gap-4 d-flex align-items-center mt-4">
-                <a href="#" class="text-dark position-relative decorationLink textLink"
-                  >Más información</a>
-                <div class="d-flex p-2 px-4 bg-black rounded-pill btnContainer">
-                  <a href="#" class="text-light text-decoration-none textLink">
-                    Comprar
-                  </a>
-                  <span class="material-symbols-outlined text-light">
-                    north_east
-                  </span>
-                </div>
+          <div class="position-absolute containerTextSlide">
+            <h1 class="text-black">Galaxy S24 Series</h1>
+            <p class="fw-light parrafoSlide">
+              Próximamente en Argentina | Registrate y obtenelos <br />
+              con beneficios exclusivos
+            </p>
+            <div class="gap-4 d-flex align-items-center mt-4">
+              <a href="#" class="text-dark textLink position-relative decorationLink">Más información</a>
+              <div class="p-2 px-4 rounded-pill btnContainer">
+                <a href="#" class="text-light text-decoration-none textLink">Registrate</a>
               </div>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev justify-content-start"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-          style="width: 5vw;"
-        >
-          <div
-            class="justify-content-center align-items-center d-flex m-2 p-2 rounded-circle bg-black border border-1 border-light"
-          >
-            <span
-              class="carousel-control-prev-icon"
-              aria-hidden="true"
-              style="width: 22px; height: 22px"
-            ></span>
-            <span class="visually-hidden">Previous</span>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <!-- Imagen para pantallas móviles -->
+          <img src="public/images/slide/slide-2-mobile.webp" class="d-block d-md-none w-100"
+            alt="Second slide Mobile" />
+
+          <!-- Imagen para pantallas de escritorio -->
+          <img src="public/images/slide/slide-2.jpeg" class="d-none d-md-block w-100" alt="Second slide" />
+
+          <div class="position-absolute containerTextSlide text-light">
+            <h1>Nuevo TV 98" <br />la experiencia del cine en tu casa</h1>
+            <p class="fw-light parrafoSlide">
+              Cuotas sin interés | Plan canje hasta 54% de ahorro.
+            </p>
+            <div class="gap-4 d-flex align-items-center mt-4">
+              <a href="#" class="text-light textLink decorationLink position-relative">Más información</a>
+
+              <div class="d-flex p-2 px-4 bg-white rounded-pill">
+                <a href="#" class="text-decoration-none textLink text-dark">
+                  Comprar
+                </a>
+                <span class="material-symbols-outlined text-dark">
+                  north_east
+                </span>
+              </div>
+            </div>
           </div>
-        </button>
-        <button
-          class="carousel-control-next justify-content-end"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-          style="width: 5vw;"
-        >
-          <div
-            class="justify-content-center align-items-center d-flex m-2 p-2 rounded-circle bg-black border border-1 border-light"
-          >
-            <span
-              class="carousel-control-next-icon"
-              aria-hidden="true"
-              style="width: 22px; height: 22px"
-            ></span>
-            <span class="visually-hidden">Next</span>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <!-- Imagen para pantallas móviles -->
+          <img src="public/images/slide/slide-3-mobile.webp" class="d-block d-md-none w-100"
+            alt="Third slide Mobile" />
+
+          <!-- Imagen para pantallas de escritorio -->
+          <img src="public/images/slide/slide-3.webp" class="d-none d-md-block w-100" alt="Third slide" />
+
+          <div class="position-absolute containerTextSlide text-light">
+            <h1>Nuevos Lavarropas <br />Carga Superior Digital Inverter</h1>
+
+            <div class="gap-4 d-flex align-items-center mt-4">
+              <a href="#" class="text-light textLink decorationLink position-relative">Más información</a>
+              <div class="d-flex p-2 px-4 bg-white rounded-pill">
+                <a href="#" class="text-decoration-none textLink text-dark">
+                  Comprar
+                </a>
+                <span class="material-symbols-outlined text-dark">
+                  north_east
+                </span>
+              </div>
+            </div>
           </div>
-        </button>
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <!-- Imagen para pantallas móviles -->
+          <img src="public/images/slide/slide-4-mobile.webp" class="d-block d-md-none w-100"
+            alt="Fourth slide Mobile" />
+
+          <!-- Imagen para pantallas de escritorio -->
+          <img src="public/images/slide/slide-4.webp" class="d-none d-md-block w-100" alt="Fourth slide" />
+
+          <div class="position-absolute containerTextSlide">
+            <h1 class="text-black">
+              El próximo gran <br />
+              avance está aquí
+            </h1>
+            <p class="fw-light parrafoSlide">
+              Ahora tambien disponible en Galaxy S23 Series, Z Flip5 | ZFold5,
+              Tab S9 | S9+ | S9 Ultra
+            </p>
+            <div class="gap-4 d-flex align-items-center mt-4">
+              <a href="#" class="text-dark position-relative decorationLink textLink">Más información</a>
+              <div class="d-flex p-2 px-4 bg-black rounded-pill btnContainer">
+                <a href="#" class="text-light text-decoration-none textLink">
+                  Comprar
+                </a>
+                <span class="material-symbols-outlined text-light">
+                  north_east
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev justify-content-start" type="button"
+        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="width: 5vw;">
+        <div
+          class="justify-content-center align-items-center d-flex m-2 p-2 rounded-circle bg-black border border-1 border-light">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 22px; height: 22px"></span>
+          <span class="visually-hidden">Previous</span>
+        </div>
+      </button>
+      <button class="carousel-control-next justify-content-end" type="button"
+        data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="width: 5vw;">
+        <div
+          class="justify-content-center align-items-center d-flex m-2 p-2 rounded-circle bg-black border border-1 border-light">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="width: 22px; height: 22px"></span>
+          <span class="visually-hidden">Next</span>
+        </div>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ELEGIDOS DEL MES -->
+  <section>
+    
+    <h1 class="nav justify-content-center fs-1 fw-bold py-3">Elegidos del mes</h1>
+    <div>
+      <ul class="nav justify-content-center bg-body-secondary py-2 ">
+        <li class="nav-item">
+          <button type="button" class="btn btn-white text-black fs-4 fw-semibold "
+            data-bs-target="#elegidosDelMes" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1">Destacados</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-white text-black fs-4 fw-semibold"
+            data-bs-target="#elegidosDelMes" data-bs-slide-to="1" aria-label="Slide 2">Móviles</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-white text-black fs-4 fw-semibold"
+            data-bs-target="#elegidosDelMes" data-bs-slide-to="2" aria-label="Slide 3">TV & Audio</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-white text-black fs-4 fw-semibold"
+            data-bs-target="#elegidosDelMes" data-bs-slide-to="3"
+            aria-label="Slide 4">Electrodomésticos</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-white text-black fs-4 fw-semibold"
+            data-bs-target="#elegidosDelMes" data-bs-slide-to="4" aria-label="Slide 5">Computación</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-white text-black fs-4 fw-semibold"
+            data-bs-target="#elegidosDelMes" data-bs-slide-to="5" aria-label="Slide 6">App Samsung
+            Shop</button>
+        </li>
+      </ul>
+    </div>
+    <div id="elegidosDelMes" class="carousel slide bg-body-secondary">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container text-center">
+            <div class="row flex-column flex-sm-row">
+              <div class="col-12 col-sm-3">
+                <div class="zoom-img rounded-5 position-relative">
+                  <img src="public/images/elegidos-del-mes/destacados 2.avif"
+                    class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                  <span
+                    class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+                    S21 FE 128GB</span>
+                </div>
+                <div class="zoom-img rounded-5 position-relative">
+                  <img src="public/images/elegidos-del-mes/destacados 3.avif"
+                    class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                  <span
+                    class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+                    S21 FE 128GB</span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 ">
+                <div class="zoom-img rounded-5 position-relative">
+                  <img src="public/images/elegidos-del-mes/destacado 1.webp"
+                    class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                  <div class="position-absolute top-50 start-50 translate-middle mt-5">
+                    <span
+                      class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App
+                      Samsung Shop!</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-3">
+                <div class="zoom-img rounded-5 position-relative">
+                  <img src="public/images/elegidos-del-mes/destacados 4.avif"
+                    class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                  <span
+                    class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Nuevo
+                    TV 98"</span>
+                </div>
+                <div class="zoom-img rounded-5 position-relative">
+                  <img src="public/images/elegidos-del-mes/destacados 5.avif"
+                    class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                  <span
+                    class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavarropa
+                    Carga Superior</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container text-center">
+          <div class="row flex-column flex-sm-row">
+            <div class="col-12 col-sm-3">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/moviles 2.avif"
+                  class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy Z
+                  Flip5</span>
+              </div>
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/moviles 3.avif"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+                  S21 FE 128GB</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 ">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/moviles 1.webp"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <div class="position-absolute top-50 start-50 translate-middle mt-5">
+                  <span
+                    class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App
+                    Samsung Shop!</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/moviles 4.avif"
+                  class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+                  S23 Ultra 256GB</span>
+              </div>
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/moviles 5.avif"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+                  A54 128GB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container text-center">
+          <div class="row flex-column flex-sm-row">
+            <div class="col-12 col-sm-6 ">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/tv y audio 1.webp"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <div class="position-absolute top-50 start-50 translate-middle mt-5">
+                  <span
+                    class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App
+                    Samsung Shop!</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/tv y audio 2.avif"
+                  class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">
+                  55" Neo QLED 4K</span>
+              </div>
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/tv y audio 3.avif"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">SMART
+                  TV Samsung OLED 65"</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/tv y audio 4.webp"
+                  class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">75"
+                  The Frame Art Mode 4K Smart TV</span>
+              </div>
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/tv y audio 5.avif"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Nuevo
+                  TV 98"</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container text-center">
+          <div class="row flex-column flex-sm-row">
+            <div class="col-12 col-sm-3">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/electrodomesticos 2.webp"
+                  class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavasecarropas
+                  9,5kg con Ecobubble</span>
+              </div>
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/electrodomesticos 3.avif"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Heladera
+                  freezer Twin Cooling 320 litros</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 ">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/electrodomesticos 1.webp"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <div class="position-absolute top-50 start-50 translate-middle mt-5">
+                  <span
+                    class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">Lavarropa
+                    9.5Kg Inverter con Ecobubble</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/electrodomesticos 4.webp"
+                  class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Heladera
+                  BESPOKE 328LTS Satin Gray</span>
+              </div>
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/electrodomesticos 5.webp"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">
+                  Lavarropas Carga Superior</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container text-center">
+          <div class="row flex-column flex-sm-row">
+            <div class="col-12 col-sm-3">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/computacion 2.jpg"
+                  class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Monitor
+                  LED 27" con Panel IPS</span>
+              </div>
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/computacion 3.avif"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Monitor
+                  Gaming 25"</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 ">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/computacion 1.webp"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <div class="position-absolute top-50 start-50 translate-middle mt-5">
+                  <span
+                    class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App
+                    Samsung Shop!</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/computacion 4.webp"
+                  class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+                  Book3 (15.6",i7,16GB) </span>
+              </div>
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/computacion 5.webp"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+                  Book3 (15.6",i3,8GB) </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container text-center">
+          <div class="row flex-column flex-sm-row">
+            <div class="col-12 col-sm-3">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/app samsung shop 2.webp"
+                  class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavarropa
+                  9.5Kg Eficiencia energetica A+++</span>
+              </div>
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/app samsung shop 3.avif"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">75"
+                  The Frame Art Mode 4K Smart TV Serie B </span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 ">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/app samsung shop 1.webp"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <div class="position-absolute top-50 start-50 translate-middle mt-5">
+                  <span
+                    class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">Heladera
+                    Freezer Inferior 328L</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3">
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/app samsung shop 4.avif"
+                  class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+                  S23 Ultra 256GB</span>
+              </div>
+              <div class="zoom-img rounded-5 position-relative">
+                <img src="public/images/elegidos-del-mes/app samsung shop 5.avif"
+                  class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+                <span
+                  class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+                  S21 FE 128GB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="visually-hidden carousel-control-prev" type="button" data-bs-target="#elegidosDelMes"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="visually-hidden carousel-control-next" type="button" data-bs-target="#elegidosDelMes"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  
+  </section>
+
+
+  <!-- PRODUCTOS RECOMENDADOS -->
+
+  <div class="container">
+    <section id="fernanda">
+      <h1>Productos Recomendados</h1>
+      <div class="carousel-container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top" src="public/images/prodrec/1celu.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy Z Flip 4</h5>
+                  <div class="color">Color : <span class="color-name-text">Graphite</span></div>
+                  <div class="price">$729.999</div>
+                  <button type="button" class="btn btn-dark btn-rounded text-white mt-auto original-size">COMPRAR
+                    AHORA</button>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top" src="public/images/prodrec/2notebook.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy Book 3 (15.6", I7, 16GB)</h5>
+                  <div class="color">Color : <span class="color-name-text">Graphite</span></div>
+                  <div class="price">$1.729.999</div>
+                  <button type="button" class="btn btn-dark btn-rounded text-white mt-auto">COMPRAR AHORA</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top" src="public/images/prodrec/3tv.avif" alt="Card image cap">
+                <div class="card-body">
+                  <h5 id="tv-title" class="tv-title">43" UHD 4K Smart TV AU7000</h5>
+                  <div class="botones-container">
+                    <button id="btn-43" type="button" class="btn btn btn-rounded text-black pulgadas">43"</button>
+                    <button id="btn-55" type="button" class="btn btn btn-rounded text-black pulgadas">55"</button>
+                    <button id="btn-70" type="button" class="btn btn btn-rounded text-black pulgadas">70"</button>
+                  </div>
+                  <div id="tv-price" class="price">$549.999</div>
+                  <button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top" src="public/images/prodrec/4.lavasecarropa.avif" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Lavasecarropas 9,5kg con <br> Ecobubble WD4000T</h5>
+                  <div class="price">$1.102.999</div>
+                  <button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top" src="public/images/prodrec/5.monitor.avif" alt="Card image cap">
+                <div class="card-body">
+                  <h5 id="monitor-title" class="card-title">Monitor 27" FHD con panel IPS 75Hz y bordes Ultradelgados
+                  </h5>
+                  <div class="botones-container">
+                    <button id="btn-22" type="button" class="btn btn btn-rounded text-black pulgadas">22"</button>
+                    <button id="btn-27" type="button" class="btn btn btn-rounded text-black pulgadas">27"</button>
+                  </div>
+                  <div id="monitor-price" class="price">$249.999</div>
+                  <button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top" src="public/images/prodrec/6.heladera.avif" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Heladera Freezer Inferior No Frost con Digital Inverter, 328L</h5>
+                  <div class="price">$1.432.999</div>
+                  <button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top" src="public/images/prodrec/7.galaxybud.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy Buds2</h5>
+                  <div class="price">$167.999</div>
+                  <button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
+                </div>
+              </div>
+            </div>
+            <!-- agregar tarjetas -->
+          </div>
+          <!--botones de navegacion -->
+
+        </div><!--de carousel container-->
       </div>
     </section>
 
-    <!-- PRODUCTOS DEL MES -->
-    <section>
-      <h1 class="nav justify-content-center fs-1 fw-bold py-3">Elegidos del mes</h1>
-      <div>
-        <ul class="nav justify-content-center bg-body-secondary py-2 ">
-          <li class="nav-item">
-            <button type="button" class="btn btn-white text-black fs-4 fw-semibold " data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Destacados</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-white text-black fs-4 fw-semibold" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2">Móviles</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-white text-black fs-4 fw-semibold" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3">TV & Audio</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-white text-black fs-4 fw-semibold" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4">Electrodomésticos</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-white text-black fs-4 fw-semibold" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4" aria-label="Slide 5">Computación</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-white text-black fs-4 fw-semibold" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5" aria-label="Slide 6">App Samsung Shop</button>
-          </li>
-        </ul>
-      </div>
-      <div id="carouselExampleIndicators2" class="carousel slide bg-body-secondary">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container text-center">
-              <div class="row flex-column flex-sm-row">
-                <div class="col-12 col-sm-3">
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/destacados 2.avif" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                        <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy S21 FE 128GB</span>
-                    </div>
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/destacados 3.avif" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy S21 FE 128GB</span>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 ">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/destacado 1.webp" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <div class="position-absolute top-50 start-50 translate-middle mt-5">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App Samsung Shop!</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-3">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/destacados 4.avif" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Nuevo TV 98"</span>
-                  </div>
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/destacados 5.avif" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavarropa Carga Superior</span>
-                  </div>
-                </div>
-              </div>	
-            </div>
-          </div>
-        </div>
-        
-          <div class="carousel-item">
-            <div class="container text-center">
-              <div class="row flex-column flex-sm-row">
-                <div class="col-12 col-sm-3">
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/moviles 2.avif" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                        <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy Z Flip5</span>
-                    </div>
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/moviles 3.avif" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy S21 FE 128GB</span>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 ">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/moviles 1.webp" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <div class="position-absolute top-50 start-50 translate-middle mt-5">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App Samsung Shop!</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-3">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/moviles 4.avif" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy S23 Ultra 256GB</span>
-                  </div>
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/moviles 5.avif" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy A54 128GB</span>
-                  </div>
-                </div>
-              </div>	
-            </div>
-          </div>
-        
-          <div class="carousel-item">
-            <div class="container text-center">
-              <div class="row flex-column flex-sm-row">
-                <div class="col-12 col-sm-6 ">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/tv y audio 1.webp" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <div class="position-absolute top-50 start-50 translate-middle mt-5">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App Samsung Shop!</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-3">
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/tv y audio 2.avif" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                        <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">
-                          55" Neo QLED 4K</span>
-                    </div>
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/tv y audio 3.avif" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">SMART TV Samsung OLED 65"</span>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-3">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/tv y audio 4.webp" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">75" The Frame Art Mode 4K Smart TV</span>
-                  </div>
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/tv y audio 5.avif" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Nuevo TV 98"</span>
-                  </div>
-                </div>
-              </div>	
-            </div>
-          </div>
-        
-          <div class="carousel-item">
-            <div class="container text-center">
-              <div class="row flex-column flex-sm-row">
-                <div class="col-12 col-sm-3">
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/electrodomesticos 2.webp" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                        <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavasecarropas 9,5kg con Ecobubble</span>
-                    </div>
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/electrodomesticos 3.avif" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Heladera freezer Twin Cooling 320 litros</span>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 ">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/electrodomesticos 1.webp" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <div class="position-absolute top-50 start-50 translate-middle mt-5">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">Lavarropa 9.5Kg Inverter con Ecobubble</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-3">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/electrodomesticos 4.webp" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Heladera BESPOKE 328LTS Satin Gray</span>
-                  </div>
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/electrodomesticos 5.webp" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6"> Lavarropas Carga Superior</span>
-                  </div>
-                </div>
-              </div>	
-            </div>
-          </div>
-        
-          <div class="carousel-item">
-            <div class="container text-center">
-              <div class="row flex-column flex-sm-row">
-                <div class="col-12 col-sm-3">
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/computacion 2.jpg" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                        <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Monitor LED 27" con Panel IPS</span>
-                    </div>
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/computacion 3.avif" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Monitor Gaming 25"</span>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 ">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/computacion 1.webp" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <div class="position-absolute top-50 start-50 translate-middle mt-5">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App Samsung Shop!</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-3">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/computacion 4.webp" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy Book3 (15.6",i7,16GB) </span>
-                  </div>
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/computacion 5.webp" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy Book3 (15.6",i3,8GB) </span>
-                  </div>
-                </div>
-              </div>	
-            </div>
-          </div>
-        
-          <div class="carousel-item">
-            <div class="container text-center">
-              <div class="row flex-column flex-sm-row">
-                <div class="col-12 col-sm-3">
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/app samsung shop 2.webp" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                        <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavarropa 9.5Kg Eficiencia energetica A+++</span>
-                    </div>
-                    <div class="zoom-img rounded-5 position-relative">
-                      <img src="public/images/elegidos-del-mes/app samsung shop 3.avif" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">75" The Frame Art Mode 4K Smart TV Serie B </span>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 ">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/app samsung shop 1.webp" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <div class="position-absolute top-50 start-50 translate-middle mt-5">
-                      <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">Heladera Freezer Inferior 328L</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-3">
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/app samsung shop 4.avif" class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy S23 Ultra 256GB</span>
-                  </div>
-                  <div class="zoom-img rounded-5 position-relative">
-                    <img src="public/images/elegidos-del-mes/app samsung shop 5.avif" class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-                    <span class="ajuste-absolute position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy S21 FE 128GB</span>
-                  </div>
-                </div>
-              </div>	
-            </div>
-          </div>
-        </div>
-      
-      <button class="visually-hidden carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="visually-hidden carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-  
-  
-    </section>
-
-    <!-- PRODUCTOS RECOMENDADOS -->
-
-    <div class="container">
-      <section id="fernanda">
-          <h1>Productos Recomendados</h1>
-          <div class="carousel-container">
-          <div class="swiper-container">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img class="card-img-top" src="public/images/prodrec/1celu.webp" alt="Card image cap">
-                          <div class="card-body">
-                              <h5 class="card-title">Galaxy Z Flip 4</h5>
-                              <div class="color">Color : <span class="color-name-text">Graphite</span></div>
-                              <div  class="price">$729.999</div>
-                              <button type="button" class="btn btn-dark btn-rounded text-white mt-auto original-size">COMPRAR AHORA</button>
-
-                          </div>
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img class="card-img-top" src="public/images/prodrec/2notebook.webp" alt="Card image cap">
-                          <div class="card-body">
-                              <h5 class="card-title">Galaxy Book 3 (15.6", I7, 16GB)</h5>
-                              <div class="color">Color : <span class="color-name-text">Graphite</span></div>
-                              <div  class="price">$1.729.999</div>
-                              <button type="button" class="btn btn-dark btn-rounded text-white mt-auto">COMPRAR AHORA</button>  
-                          </div>
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img class="card-img-top" src="public/images/prodrec/3tv.avif" alt="Card image cap">
-                          <div class="card-body">
-                              <h5 id="tv-title" class="tv-title">43" UHD 4K Smart TV AU7000</h5>
-                              <div class="botones-container">
-                                  <button id="btn-43" type="button" class="btn btn btn-rounded text-black pulgadas">43"</button>
-                                  <button id="btn-55" type="button" class="btn btn btn-rounded text-black pulgadas">55"</button>
-                                  <button id="btn-70" type="button" class="btn btn btn-rounded text-black pulgadas">70"</button>
-                              </div>
-                              <div id = "tv-price" class="price">$549.999</div>
-                              <button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img class="card-img-top" src="public/images/prodrec/4.lavasecarropa.avif" alt="Card image cap">
-                          <div class="card-body">
-                              <h5 class="card-title">Lavasecarropas 9,5kg con <br> Ecobubble WD4000T</h5>
-                              <div  class="price">$1.102.999</div>
-                              <button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img class="card-img-top" src="public/images/prodrec/5.monitor.avif" alt="Card image cap">
-                          <div class="card-body">
-                              <h5 id="monitor-title" class="card-title">Monitor 27" FHD con panel IPS 75Hz y bordes Ultradelgados</h5>
-                              <div class="botones-container">
-                              <button id="btn-22" type="button" class="btn btn btn-rounded text-black pulgadas">22"</button>
-                              <button id="btn-27" type="button" class="btn btn btn-rounded text-black pulgadas">27"</button>
-                          </div>
-                              <div id = "monitor-price" class="price">$249.999</div>
-                              <button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img class="card-img-top" src="public/images/prodrec/6.heladera.avif" alt="Card image cap">
-                          <div class="card-body">
-                              <h5 class="card-title">Heladera Freezer Inferior No Frost con Digital Inverter, 328L</h5>
-                              <div class="price">$1.432.999</div>
-                              <button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                      <div class="card">
-                          <img class="card-img-top" src="public/images/prodrec/7.galaxybud.webp" alt="Card image cap">
-                          <div class="card-body">
-                              <h5 class="card-title">Galaxy Buds2</h5>
-                              <div  class="price">$167.999</div>
-                              <button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- agregar tarjetas -->
-              </div>
-              <!--botones de navegacion -->
-            
-          </div><!--de carousel container-->
-          </div>
-      </section>
-      
   </div>
   <div class="botoncitos">
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-   </div>
+  </div>
 
 
-   <!-- FOOTER -->
 
-   <footer class="caja">
+
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="caja">
     <div>
-        <p class="d-flex justify-content-center">Copyright© 1995-2024 Samsung. Todos los derechos reservados.</p>
+      <p class="d-flex justify-content-center">Copyright© 1995-2024 Samsung. Todos los derechos reservados.</p>
     </div>
     <div class="redes">
-        <h1 class="footer">Mantenete Informado!</h1>
-        <a href="https://www.facebook.com/SamsungArgentina/?locale=es_LA" target="_blank"><img class="tamaño"
-                src="public/images/facebook.svg" alt="FACEBOOK"></a>
-        <a href="https://www.instagram.com/samsungargentina/?hl=es" target="_blank"><img class="tamaño"
-                src="public/images/instagram.svg" alt="INSTAGRAM"></a>
-        <a href="https://twitter.com/SamsungArg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img class="tamaño"
-                src="public/images/twitter.svg" alt="TWITTER"></a>
-        <a href="https://www.youtube.com/channel/UCVxotPxp9JUc4wBWmdyXhYQ" target="_blank"><img class="tamaño"
-                src="public/images/youtube.svg" alt="YOU-TUBE"></a>
+      <h1 class="footer">Mantenete Informado!</h1>
+      <a href="https://www.facebook.com/SamsungArgentina/?locale=es_LA" target="_blank"><img class="tamaño"
+          src="public/images/linea-hogar/facebook.svg" alt="FACEBOOK"></a>
+      <a href="https://www.instagram.com/samsungargentina/?hl=es" target="_blank"><img class="tamaño"
+          src="public/images/linea-hogar/instagram.svg" alt="INSTAGRAM"></a>
+      <a href="https://twitter.com/SamsungArg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        target="_blank"><img class="tamaño" src="public/images/linea-hogar/twitter.svg" alt="TWITTER"></a>
+      <a href="https://www.youtube.com/channel/UCVxotPxp9JUc4wBWmdyXhYQ" target="_blank"><img class="tamaño"
+          src="public/images/linea-hogar/youtube.svg" alt="YOU-TUBE"></a>
     </div>
-</footer>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-       <!-- jQuery y Bootstrap JS -->
-       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   
-        <!--mi js-->
-        <script src = "js/javascript.js"></script>
+  <!-- jQuery y Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  </body>
+  <!--mi js-->
+  <script src="js/javascript.js"></script>
+
+</body>
+
 </html>
