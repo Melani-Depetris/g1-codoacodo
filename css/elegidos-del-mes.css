@@ -1,0 +1,23 @@
+.zoom-img {
+  overflow: hidden;
+}
+
+.zoom-img img {
+  transition: transform 0.3s ease;
+}
+
+.zoom-img:hover img {
+  transform: scale(1.05);
+}
+
+.ajuste-absolute {
+  height: 1rem;
+  width: 14rem;
+  
+}
+
+
+.menu-container {
+  overflow-x: auto; /* Hacer que el contenedor sea desplazable horizontalmente */
+  white-space: nowrap; /* Evitar que los elementos de menú se envuelvan */
+}
