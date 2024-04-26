@@ -28,13 +28,15 @@
 </head>
 
 <body>
+
+
   <!-- MENU  -->
   <nav class="bg-body-secondary navbar navbar-expand-lg ">
     <div class="container-fluid">
       <a class="justify-content-around navbar-brand text-dark-emphasis" href="#">Nosotros</a>
 
       <!-- Button trigger modal -->
-      <button type="button" class="btn bs-border-color" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <span class="material-symbols-outlined">
           search
         </span>
@@ -98,18 +100,16 @@
         <!-- login y carrito-->
 
         <div>
-          <button type="button" class="btn bs-border-color" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
             <span class="material-symbols-outlined">
               person
             </span>
           </button>
-
-          <button type="button" class="btn bs-border-color" data-bs-toggle="modal" data-bs-target="#loginModal">
+         <button type="button" class="btn bs-border-color" data-bs-toggle="modal" data-bs-target="#loginModal">
             <span class="material-symbols-outlined">
               shopping_cart
             </span>
           </button>
-          
         </div>
       </div>
     </div>
@@ -239,11 +239,12 @@
       </div>
     </div>
   </div>
+
   <!-- SLIDE -->
   <section>
     <!-- Slide Bootstrap -->
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <!-- data-bs-ride="carousel  -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" >
+      <!-- data-bs-ride="carousel"  -->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -259,42 +260,44 @@
         <!-- Slide 1 -->
         <div class="carousel-item active position-relative">
           <!-- Imagen para pantallas móviles -->
-          <img src="public/images/slide/slide-1-mobile.webp" class="d-block d-md-none w-100"
+          <img src="../../../public/images/slide/slide-1-mobile.webp" class="d-block d-md-none w-100"
             alt="First slide Mobile" />
 
           <!-- Imagen para pantallas de escritorio -->
-          <img src="public/images/slide/slide-1.webp" class="d-none d-md-block w-100"
+          <img src="../../../public/images/slide/slide-1.webp" class="d-none d-md-block w-100"
             alt="First slide Desktop" />
 
+        <div class="containerContainer">
           <div class="position-absolute containerTextSlide">
             <h1 class="text-black">Galaxy S24 Series</h1>
             <p class="fw-light parrafoSlide">
               Próximamente en Argentina | Registrate y obtenelos <br />
               con beneficios exclusivos
             </p>
-            <div class="gap-4 d-flex align-items-center mt-4">
+            <div class="gap-4 d-flex align-items-center mt-4 containerButtons">
               <a href="#" class="text-dark textLink position-relative decorationLink">Más información</a>
               <div class="p-2 px-4 rounded-pill btnContainer">
                 <a href="#" class="text-light text-decoration-none textLink">Registrate</a>
               </div>
             </div>
-          </div>
+          </div> 
+        </div>
         </div>
         <!-- Slide 2 -->
         <div class="carousel-item">
           <!-- Imagen para pantallas móviles -->
-          <img src="public/images/slide/slide-2-mobile.webp" class="d-block d-md-none w-100"
+          <img src="../../../public/images/slide/slide-2-mobile.webp" class="d-block d-md-none w-100"
             alt="Second slide Mobile" />
 
           <!-- Imagen para pantallas de escritorio -->
-          <img src="public/images/slide/slide-2.jpeg" class="d-none d-md-block w-100" alt="Second slide" />
-
+          <img src="../../../public/images/slide/slide-2.jpeg" class="d-none d-md-block w-100" alt="Second slide" />
+          <div class="containerContainer">
           <div class="position-absolute containerTextSlide text-light">
             <h1>Nuevo TV 98" <br />la experiencia del cine en tu casa</h1>
             <p class="fw-light parrafoSlide">
               Cuotas sin interés | Plan canje hasta 54% de ahorro.
             </p>
-            <div class="gap-4 d-flex align-items-center mt-4">
+            <div class="gap-4 d-flex align-items-center mt-4 containerButtons">
               <a href="#" class="text-light textLink decorationLink position-relative">Más información</a>
 
               <div class="d-flex p-2 px-4 bg-white rounded-pill">
@@ -307,62 +310,71 @@
               </div>
             </div>
           </div>
+</div>
+
         </div>
         <!-- Slide 3 -->
         <div class="carousel-item">
           <!-- Imagen para pantallas móviles -->
-          <img src="public/images/slide/slide-3-mobile.webp" class="d-block d-md-none w-100"
+          <img src="../../../public/images/slide/slide-3-mobile.webp" class="d-block d-md-none w-100"
             alt="Third slide Mobile" />
 
           <!-- Imagen para pantallas de escritorio -->
-          <img src="public/images/slide/slide-3.webp" class="d-none d-md-block w-100" alt="Third slide" />
+          <img src="../../../public/images/slide/slide-3.webp" class="d-none d-md-block w-100" alt="Third slide" />
 
-          <div class="position-absolute containerTextSlide text-light">
-            <h1>Nuevos Lavarropas <br />Carga Superior Digital Inverter</h1>
-
-            <div class="gap-4 d-flex align-items-center mt-4">
-              <a href="#" class="text-light textLink decorationLink position-relative">Más información</a>
-              <div class="d-flex p-2 px-4 bg-white rounded-pill">
-                <a href="#" class="text-decoration-none textLink text-dark">
-                  Comprar
-                </a>
-                <span class="material-symbols-outlined text-dark">
-                  north_east
-                </span>
+          <div class="containerContainer">
+            <div class="position-absolute containerTextSlide text-light">
+              <h1>Nuevos Lavarropas <br />Carga Superior Digital Inverter</h1>
+  
+              <div class="gap-4 d-flex align-items-center mt-4 containerButtons">
+                <a href="#" class="text-light textLink decorationLink position-relative">Más información</a>
+                <div class="d-flex p-2 px-4 bg-white rounded-pill">
+                  <a href="#" class="text-decoration-none textLink text-dark">
+                    Comprar
+                  </a>
+                  <span class="material-symbols-outlined text-dark">
+                    north_east
+                  </span>
+                </div>
               </div>
             </div>
           </div>
+          
+      
         </div>
         <!-- Slide 4 -->
         <div class="carousel-item">
           <!-- Imagen para pantallas móviles -->
-          <img src="public/images/slide/slide-4-mobile.webp" class="d-block d-md-none w-100"
+          <img src="../../../public/images/slide/slide-4-mobile.webp" class="d-block d-md-none w-100"
             alt="Fourth slide Mobile" />
 
           <!-- Imagen para pantallas de escritorio -->
-          <img src="public/images/slide/slide-4.webp" class="d-none d-md-block w-100" alt="Fourth slide" />
+          <img src="../../../public/images/slide/slide-4.webp" class="d-none d-md-block w-100" alt="Fourth slide" />
 
-          <div class="position-absolute containerTextSlide">
-            <h1 class="text-black">
-              El próximo gran <br />
-              avance está aquí
-            </h1>
-            <p class="fw-light parrafoSlide">
-              Ahora tambien disponible en Galaxy S23 Series, Z Flip5 | ZFold5,
-              Tab S9 | S9+ | S9 Ultra
-            </p>
-            <div class="gap-4 d-flex align-items-center mt-4">
-              <a href="#" class="text-dark position-relative decorationLink textLink">Más información</a>
-              <div class="d-flex p-2 px-4 bg-black rounded-pill btnContainer">
-                <a href="#" class="text-light text-decoration-none textLink">
-                  Comprar
-                </a>
-                <span class="material-symbols-outlined text-light">
-                  north_east
-                </span>
+          <div class="containerContainer">
+            <div class="position-absolute containerTextSlide">
+              <h1 class="text-black">
+                El próximo gran <br />
+                avance está aquí
+              </h1>
+              <p class="fw-light parrafoSlide">
+                Ahora tambien disponible en Galaxy S23 Series, Z Flip5 | ZFold5,
+                Tab S9 | S9+ | S9 Ultra
+              </p>
+              <div class="gap-4 d-flex align-items-center mt-4 containerButtons">
+                <a href="#" class="text-dark position-relative decorationLink textLink">Más información</a>
+                <div class="d-flex p-2 px-4 bg-black rounded-pill btnContainer">
+                  <a href="#" class="text-light text-decoration-none textLink">
+                    Comprar
+                  </a>
+                  <span class="material-symbols-outlined text-light">
+                    north_east
+                  </span>
+                </div>
               </div>
             </div>
           </div>
+      
         </div>
       </div>
       <button class="carousel-control-prev justify-content-start" type="button"
@@ -384,43 +396,41 @@
     </div>
   </section>
 
-
-  <!-- ELEGIDOS DEL MES -->
+  <!-- PRODUCTOS DEL MES -->
   <section>
-    
     <h1 class="nav justify-content-center fs-1 fw-bold py-3">Elegidos del mes</h1>
     <div>
       <ul class="nav justify-content-center bg-body-secondary py-2 ">
         <li class="nav-item">
           <button type="button" class="btn btn-white text-black fs-4 fw-semibold "
-            data-bs-target="#elegidosDelMes" data-bs-slide-to="0" class="active" aria-current="true"
+            data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true"
             aria-label="Slide 1">Destacados</button>
         </li>
         <li class="nav-item">
           <button type="button" class="btn btn-white text-black fs-4 fw-semibold"
-            data-bs-target="#elegidosDelMes" data-bs-slide-to="1" aria-label="Slide 2">Móviles</button>
+            data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2">Móviles</button>
         </li>
         <li class="nav-item">
           <button type="button" class="btn btn-white text-black fs-4 fw-semibold"
-            data-bs-target="#elegidosDelMes" data-bs-slide-to="2" aria-label="Slide 3">TV & Audio</button>
+            data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3">TV & Audio</button>
         </li>
         <li class="nav-item">
           <button type="button" class="btn btn-white text-black fs-4 fw-semibold"
-            data-bs-target="#elegidosDelMes" data-bs-slide-to="3"
+            data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
             aria-label="Slide 4">Electrodomésticos</button>
         </li>
         <li class="nav-item">
           <button type="button" class="btn btn-white text-black fs-4 fw-semibold"
-            data-bs-target="#elegidosDelMes" data-bs-slide-to="4" aria-label="Slide 5">Computación</button>
+            data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4" aria-label="Slide 5">Computación</button>
         </li>
         <li class="nav-item">
           <button type="button" class="btn btn-white text-black fs-4 fw-semibold"
-            data-bs-target="#elegidosDelMes" data-bs-slide-to="5" aria-label="Slide 6">App Samsung
+            data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5" aria-label="Slide 6">App Samsung
             Shop</button>
         </li>
       </ul>
     </div>
-    <div id="elegidosDelMes" class="carousel slide bg-body-secondary">
+    <div id="carouselExampleIndicators2" class="carousel slide bg-body-secondary">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="container text-center">
@@ -472,6 +482,7 @@
           </div>
         </div>
       </div>
+
       <div class="carousel-item">
         <div class="container text-center">
           <div class="row flex-column flex-sm-row">
@@ -521,6 +532,7 @@
           </div>
         </div>
       </div>
+
       <div class="carousel-item">
         <div class="container text-center">
           <div class="row flex-column flex-sm-row">
@@ -566,6 +578,7 @@
           </div>
         </div>
       </div>
+
       <div class="carousel-item">
         <div class="container text-center">
           <div class="row flex-column flex-sm-row">
@@ -614,6 +627,7 @@
           </div>
         </div>
       </div>
+
       <div class="carousel-item">
         <div class="container text-center">
           <div class="row flex-column flex-sm-row">
@@ -663,6 +677,7 @@
           </div>
         </div>
       </div>
+
       <div class="carousel-item">
         <div class="container text-center">
           <div class="row flex-column flex-sm-row">
@@ -712,19 +727,20 @@
         </div>
       </div>
     </div>
-    <button class="visually-hidden carousel-control-prev" type="button" data-bs-target="#elegidosDelMes"
+
+    <button class="visually-hidden carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
       data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="visually-hidden carousel-control-next" type="button" data-bs-target="#elegidosDelMes"
+    <button class="visually-hidden carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
       data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  
-  </section>
 
+
+  </section>
 
   <!-- PRODUCTOS RECOMENDADOS -->
 
@@ -831,11 +847,6 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
-
-
-
-
-
 
 
   <!-- FOOTER -->
